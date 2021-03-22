@@ -7,3 +7,4 @@ let mySchool = (function(){
 
 }()); // () is to tell the browser for immediate function call.
 console.log(mySchool);
+
