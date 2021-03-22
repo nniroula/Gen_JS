@@ -1,3 +1,5 @@
+
+// Approach 1 to create Object is called Object literal, approach 2 uses constructor notation - new key word
 // this program creates an object and accesses its content using dot and square bracket notation.
 let obj = {
     name: "Nabin",
@@ -27,3 +29,21 @@ console.log(obj[33]); // this returns "age"
 console.log(obj.name); // this returns Nabin
 //console.log(obj[name]); // this gives an error, becuse key is always string in a JS object
 console.log(obj["name"]);
+
+/*
+This is an approach 2 of creating an object in JS, called constructor notation method.
+It uses new key word (new Object()) to create a new object.
+*/
+let obj2 = new Object();
+obj2.name = "Joe";
+obj2.title = "president";
+obj2.age = 78;
+obj2[46] = "US President";
+obj2.work = (function(){
+    return "Politics";
+}());
+obj2.profession = function(){
+    return obj2["title"];
+}();  // without (), this does not return president, so for immediate invocation of function expression, () is needed.
+
+console.log(obj2);
