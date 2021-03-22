@@ -46,4 +46,20 @@ obj2.profession = function(){
     return obj2["title"];
 }();  // without (), this does not return president, so for immediate invocation of function expression, () is needed.
 
+// to delete an element, use delete key word
+delete obj2.name;
+let newObject = obj2;
+console.log(newObject);
+
+//Now update the name 
+obj2.name = "Joe Biden";
+let newObject2 = obj2;
+console.log(newObject2);
+// again change the name
+obj2["name"] = "Joseph H Biden";
+// make the name empty
+obj2.name  = '';
+let newObject3 = obj2;
+console.log(newObject3);
+
 console.log(obj2);
